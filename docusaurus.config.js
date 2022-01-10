@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Builds your deployment system around GitHub.',
-  tagline: 'Gitploy is the easiest way to build an advanced deployment system around GitHub in minutes.',
-  url: 'https://gitploy.io',
+  title: 'Gitploy',
+  tagline: 'Builds your deployment system around GitHub.',
+  url: 'https://www.gitploy.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

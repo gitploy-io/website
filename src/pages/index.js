@@ -13,8 +13,8 @@ function HomepageHeader() {
       <div className="container">
         <div className="row">
           <div className="col col--6 col--offset-3">
-            <h1 className="hero__title">{siteConfig.title}</h1>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
+            <h1 className="hero__title">Builds your deployment system around GitHub.</h1>
+            <p className="hero__subtitle">Gitploy is the easiest way to build an advanced deployment system around GitHub in minutes.</p>
           </div>
         </div>
         <div className={styles.buttons}>

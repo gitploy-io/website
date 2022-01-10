@@ -4,32 +4,32 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Powered By GitHub',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Build the deployment system around <strong>GitHub deployment API</strong>. 
+        Gitploy build the deployment system loosely coupled tooling without worrying about the implementation details of delivering different types of applications.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Configuration as code',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Pipeline is configured with a simple, easy-to-read file that you commit to your git repository.
+        Gitploy build an advanced deployment pipeline from scratch in minutes.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Deployment safety',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Deployment can be more dangerous than others and might need to be treated with extra care. 
+        Gitploy has several features that help to deploy safely.
       </>
     ),
   },
