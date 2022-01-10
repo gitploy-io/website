@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Builds your deployment system around GitHub.',
+  tagline: 'Gitploy is the easiest way to build an advanced deployment system around GitHub in minutes.',
+  url: 'https://gitploy.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'gitploy-io', // Usually your GitHub org/user name.
+  projectName: 'gitploy', // Usually your repo name.
 
   presets: [
     [
