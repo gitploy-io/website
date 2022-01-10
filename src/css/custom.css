@@ -8,17 +8,13 @@
 :root {
   --white: #fff;
   --black: #000;
-  --purple-1: #f9f0ff;
-  --purple-2: #efdbff;
-  --purple-3: #d3adf7;
-  --purple-4: #b37feb;
-  --purple-5: #9254de;
-  --purple-6: #722ed1;
-  --purple-7: #531dab;
-  --purple-8: #391085;
-  --purple-9: #22075e;
-  --purple-10: #120338;
-
+  --nebula-blue: #722ed1;
+  --moon-grey: #f5f5fa;
+  --proton-grey: #c5c9e0;
+  --nova-grey: #848ab8;
+  --telluric-blue: #5d6494;
+  --solstice-blue: #3a416f;
+  --cosmos-black: #21243d;
 
   /* heading */
   --ifm-h1-font-size: 2.8rem;
@@ -26,27 +22,31 @@
 }
 
 :root {
-  --ifm-heading-color:  var(--purple-10);
-  --ifm-color-primary: var(--purple-6);
-  --ifm-color-primary-dark: var(--purple-7);
-  --ifm-color-primary-darker: var(--purple-8);
-  --ifm-color-primary-darkest: var(--purple-9);
-  --ifm-color-primary-light: var(--purple-3);
-  --ifm-color-primary-lighter: var(--purple-2);
-  --ifm-color-primary-lightest: var(--purple-1);
-  --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 16px;
+  --ifm-code-font-size: 90%;
+  --ifm-footer-background-color: var(--moon-grey);
+  --ifm-menu-color-background-active: var(--ifm-color-emphasis-200);
+  --ifm-color-primary: var(--nebula-blue);
+  --ifm-heading-color:  var(--cosmos-black);
+  --ifm-menu-color-active: #5629B6;
+  --ifm-color-primary-dark: #4d25a4;
+  --ifm-color-primary-darker: #49239b;
+  --ifm-color-primary-darkest: #3c1d7f;
+  --ifm-color-primary-light: #5f2dc8;
+  --ifm-color-primary-lighter: #6330d0;
+  --ifm-color-primary-lightest: #784bd7;
 }
 
 html[data-theme='dark'] {
-  --ifm-font-base-color: var(--purple-1);
-  --ifm-navbar-link-hover-color: var(--purple-4);
-  --ifm-link-color: var(--purple-4);
-  --ifm-menu-color-active: var(--purple-4);
-  --ifm-background-color: var(--purple-9);
-  --ifm-heading-color: var(--purple-1);
-  --ifm-footer-background-color: var(--purple-9);
-  --ifm-navbar-background-color: var(--purple-8);
-  --ifm-menu-color-background-active: var(--purple-8);
+  --ifm-font-base-color: #dee0f2;
+  --ifm-navbar-link-hover-color: #8b9dff;
+  --ifm-link-color: #8b9dff;
+  --ifm-menu-color-active: #8b9dff;
+  --ifm-background-color: #0a141c;
+  --ifm-heading-color: #dee0f2;
+  --ifm-footer-background-color: #0a141c;
+  --ifm-navbar-background-color: #21243d;
+  --ifm-menu-color-background-active: #21243d;
 }
 
 #hero {
