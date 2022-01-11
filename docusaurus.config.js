@@ -42,6 +42,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {name: 'og:image', content: '/img/logo.svg'},
+        {name: 'keywords', content: 'github, github deployment api, deploy, continuous deployment, continuous delivery, cicd'}
+      ],
       navbar: {
         title: 'Gitploy',
         logo: {
