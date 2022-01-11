@@ -20,12 +20,12 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg margin-right--md"
-            to="/docs/intro">
+            to="/docs/">
             Get Started
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="https://github.com/gitploy-io/gitploy/discussions">
             Join Our Community
           </Link>
         </div>

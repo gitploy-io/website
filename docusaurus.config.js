@@ -50,6 +50,11 @@ const config = {
         },
         items: [
           {
+            to: 'https://cloud.gitploy.io',
+            label: 'Cloud',
+            position: 'left',
+          },
+          {
             type: 'doc',
             docId: 'index',
             position: 'left',
@@ -95,6 +100,10 @@ const config = {
               //   label: 'Blog',
               //   to: '/blog',
               // },
+              {
+                label: 'Cloud',
+                href: 'https://cloud.gitploy.io',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/gitploy-io/gitploy',

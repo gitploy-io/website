@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Powered By GitHub',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/features/github.svg').default,
     description: (
       <>
         Build the deployment system around <strong>GitHub deployment API</strong>. 
@@ -15,27 +15,27 @@ const FeatureList = [
   },
   {
     title: 'Configuration as code',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/features/file.svg').default,
     description: (
       <>
-        Pipeline is configured with a simple, easy-to-read file that you commit to your git repository.
+        <strong>Pipeline is configured with a simple, easy-to-read file</strong> that you commit to your git repository.
         Gitploy build an advanced deployment pipeline from scratch in minutes.
       </>
     ),
   },
   {
     title: 'Deployment safety',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/features/deployment.svg').default,
     description: (
       <>
         Deployment can be more dangerous than others and might need to be treated with extra care. 
-        Gitploy has several features that help to deploy safely.
+        Gitploy has <strong>advanced features that help to deploy safely.</strong>
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, Png, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
