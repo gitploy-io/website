@@ -8,8 +8,8 @@ export default function HomepageInstallation() {
       <div className="container">
         <div className="row">
           <div className="col col--6 col--offset-3">
-            <h1 class="hero__title" style={{color: "#f5f5fa"}}>Install Gitploy in Minutes</h1>
-            <p class="hero__subtitle">Download our official Docker image or build from source. No need to talk with sales or request a trial license.</p>
+            <h1 className="hero__title" style={{color: "#f5f5fa"}}>Install Gitploy in Minutes</h1>
+            <p className="hero__subtitle">Download our official Docker image or build from source. No need to talk with sales or request a trial license.</p>
           </div>
         </div>
         <div className={styles.buttons}>

@@ -59,6 +59,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/enterprise',
+            label: 'Enterprise',
+            position: 'left',
+          },
+          {
             type: 'doc',
             docId: 'index',
             position: 'left',
