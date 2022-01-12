@@ -116,9 +116,9 @@ function FeatureTable({title, items}) {
               </tr>
             </thead>
             <tbody>
-              {items.map((item) => {
+              {items.map((item, idx) => {
                 return (
-                  <tr>
+                  <tr key={idx}>
                     <td>{item[0]}</td>
                     <td style={{textAlign: "center"}}>{item[1]}</td>
                     <td style={{textAlign: "center"}}>{item[2]}</td>
