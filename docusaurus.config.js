@@ -117,6 +117,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/gitploy-io/gitploy',
               },
+              {
+                label: 'Terms Of Service',
+                to: '/terms',
+              },
             ],
           },
         ],
