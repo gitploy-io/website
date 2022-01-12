@@ -64,7 +64,12 @@ function PriceModel() {
                 </p>
               </div>
               <div className="card__footer">
-                <button className="button button--secondary button--block button--lg">Purchase</button>
+                <Link
+                  className="button button--secondary button--block button--lg"
+                  to="https://forms.gle/pE4GfmxkZviyHj9FA"
+                >
+                  Purchase
+                </Link>
               </div>
             </div>
           </div>
@@ -81,7 +86,12 @@ function PriceModel() {
                 </p>
               </div>
               <div className="card__footer">
-                <button className="button button--secondary button--block button--lg">Contact Us</button>
+                <Link
+                  className="button button--secondary button--block button--lg"
+                  to="https://forms.gle/pE4GfmxkZviyHj9FA"
+                >
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>
