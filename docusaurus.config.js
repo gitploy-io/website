@@ -8,13 +8,28 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gitploy',
   tagline: 'Builds your deployment system around GitHub.',
-  url: 'https://www.gitploy.io',
+  url: 'https://www.gitploy.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'gitploy-io', // Usually your GitHub org/user name.
   projectName: 'gitploy', // Usually your repo name.
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            // Redirect the old link for the "deploy.yml" documentation.
+            to: '/docs/concepts/deploy.yml', 
+            from: ['/concepts/deploy.yml'], 
+          },
+        ],
+      },
+    ],
+  ],
 
   presets: [
     [
