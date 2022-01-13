@@ -19,4 +19,4 @@ jobs:
         name: Test build
         run: | 
           npm install --frozen-lockfile
-          npm build
+          npm run build
