@@ -34,8 +34,7 @@ jobs:
         with:
           github_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: ./build
-          # TODO: Uncomment the cname field
-          # cname: www.gitploy.io
+          cname: www.gitploy.io
 
       - 
         name: Deploy successfully
