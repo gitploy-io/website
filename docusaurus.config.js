@@ -28,6 +28,13 @@ const config = {
           },
         ],
       },
+    ], 
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-DWC4MY4M08',
+        anonymizeIP: true,
+      },
     ],
   ],
 
@@ -51,15 +58,6 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
-    ],
-    [
-      '@docusaurus/preset-classic',
-      {
-        googleAnalytics: {
-          trackingID: 'G-DWC4MY4M08',
-          anonymizeIP: true,
-        },
-      },
     ],
   ],
 
