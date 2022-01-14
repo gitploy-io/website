@@ -52,6 +52,15 @@ const config = {
         },
       }),
     ],
+    [
+      '@docusaurus/preset-classic',
+      {
+        googleAnalytics: {
+          trackingID: 'G-DWC4MY4M08',
+          anonymizeIP: true,
+        },
+      },
+    ],
   ],
 
   themeConfig:
