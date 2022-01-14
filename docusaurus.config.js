@@ -28,6 +28,13 @@ const config = {
           },
         ],
       },
+    ], 
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-DWC4MY4M08',
+        anonymizeIP: true,
+      },
     ],
   ],
 
@@ -59,7 +66,7 @@ const config = {
     ({
       metadata: [
         {name: 'og:image', content: '/img/logo.svg'},
-        {name: 'keywords', content: 'github, github deployment api, deploy, continuous deployment, continuous delivery, cicd'}
+        {name: 'keywords', content: 'github, github deployment api, github environment, deploy, continuous deployment, continuous delivery, cicd'}
       ],
       navbar: {
         title: 'Gitploy',
