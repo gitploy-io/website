@@ -29,13 +29,6 @@ const config = {
         ],
       },
     ], 
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-DWC4MY4M08',
-        anonymizeIP: true,
-      },
-    ],
   ],
 
   presets: [
@@ -57,6 +50,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-DWC4MY4M08',
+          anonymizeIP: true,
+        }
       }),
     ],
   ],
