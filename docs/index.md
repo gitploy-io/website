@@ -1,16 +1,14 @@
 ---
 sidebar_position: 1
-title: Docs
+title: What is Gitploy?
 ---
 
-## What is Gitploy?
 
 ![Gitploy](../static/img/docs/gitploy.gif)
 
 Gitploy is the tooling that helps your organization build the deployment system in minutes. It enables your organization **to deploy in the same manner** without worrying about the details of different types of applications and **to deploy differently** for each application, respectively. And as a result, your organization can get a robust system to deploy fast and safely. 🚀
 
-
-### Deploy in the same manner
+## Deploy in the same manner
 
 An organization has different types of applications, and it needs different deployment toolings for each application. For example, if an organization uses the Kubernetes for servers and the S3 for static websites, they generally choose different toolings. In my case, I used to choose Spinnaker for Kubernetes and CI tools (Ex. GitHub Action) for S3.
 
@@ -20,7 +18,7 @@ Gitploy resolves the complexity perfectly in minutes. It always provides **the w
 
 Gitploy provides an intuitive UI similar to GitHub. Users can select one of the commits, branches, or tags to deploy and follow up on the deployment status.
 
-### Deploy differently
+## Deploy differently
 
 Each application needs a customizable pipeline. If an organization has essential applications to deploy carefully, it should enforce a gateway like a review or deploy freeze window. And an organization chooses continuous delivery or continuous deployment for application.
  
