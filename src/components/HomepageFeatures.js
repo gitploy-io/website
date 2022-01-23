@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         Build the deployment system around <strong>GitHub deployment API</strong>. 
-        Gitploy build the deployment system loosely coupled tooling without worrying about the implementation details of delivering different types of applications.
+        It enable a organization builds loosely coupled deployment system, without worrying about the implementation details of delivering different types of applications.
       </>
     ),
   },
@@ -19,7 +19,7 @@ const FeatureList = [
     description: (
       <>
         <strong>Pipeline is configured with a simple, easy-to-read file</strong> that you commit to your git repository.
-        Gitploy build an advanced deployment pipeline from scratch in minutes.
+        It configures a deployment pipeline for each runtime environment in minutes.
       </>
     ),
   },
@@ -29,7 +29,7 @@ const FeatureList = [
     description: (
       <>
         Deployment can be more dangerous than others and might need to be treated with extra care. 
-        Gitploy has <strong>advanced features that help to deploy safely.</strong>
+        Gitploy has <strong>powerful features to deploy safely.</strong>
       </>
     ),
   },
