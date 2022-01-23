@@ -10,7 +10,7 @@ Gitploy has the review to require at least one approval for the deployment. You 
 
 1\. To enable review, you must configure the `review` field first.
 
-```yaml
+```yaml title="deploy.yml"
 envs:
   - name: production
     review:
