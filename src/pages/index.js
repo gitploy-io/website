@@ -15,10 +15,9 @@ function HomepageHeader() {
         <div className="row">
           <div className="col col--6 col--offset-3">
             <h1 className="hero__title">Builds your deployment system around GitHub.</h1>
-            <p className="hero__subtitle">Gitploy is the easiest way to build an advanced deployment system around GitHub in minutes.</p>
           </div>
         </div>
-        <div className={styles.buttons}>
+        <div className={clsx('margin-top--md', styles.buttons)}>
           <Link
             className="button button--primary button--lg margin-right--md"
             to="/docs/">
