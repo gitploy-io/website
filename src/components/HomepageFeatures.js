@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         Build the deployment system around <strong>GitHub deployment API</strong>. 
-        It enable a organization builds loosely coupled deployment system, without worrying about the implementation details of delivering different types of applications.
+        It enables an organization builds loosely coupled deployment system, without worrying about the implementation details of delivering different types of applications.
       </>
     ),
   },
