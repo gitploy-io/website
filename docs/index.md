@@ -3,7 +3,7 @@ sidebar_position: 1
 title: What is Gitploy?
 ---
 
-Gitploy is a tooling that helps your organization build the deployment system in minutes. It enables your organization **to deploy in the same manner** without worrying about the details of different types of applications and **to deploy differently** for each application, respectively. And as a result, your organization can get a robust system to deploy fast and safely. 🚀
+Gitploy is a tooling that helps your organization build the deployment system in minutes. It enables your organization **to deploy in the same manner** without worrying about  the implementation details of delivering different types of applications (e.g., web, native). and **to deploy differently** for each application by a simple configuration file, respectively. And as a result, your organization can get a robust system to deploy fast and safely. 🚀
 
 ## Deploy in the same manner
 
@@ -19,7 +19,7 @@ Gitploy provides an intuitive UI similar to GitHub. Users can select one of the 
 
 ## Deploy differently
 
-Each application needs a customizable pipeline. If an organization has essential applications to deploy carefully, it should enforce a gateway like a review or deploy freeze window. And an organization chooses continuous delivery or continuous deployment for application.
+Each application needs a customizable pipeline. If an organization has essential applications to deploy carefully, it should enforce a gateway like a review or deploy freeze window. And also an organization chooses continuous delivery or continuous deployment for application.
  
 Gitploy provides a way **to configure a pipeline with a simple, easy‑to‑read file for each repository (each environment).** The default path is `deploy.yml` at the root directory, but you can replace the file path in the settings tab of Gitploy. 
 
