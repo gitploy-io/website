@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # How it works
 
-Gitploy builds the system around GitHub [deployment API](https://docs.github.com/en/rest/reference/deployments#deployments). Deployment API is a request to deploy a specific ref (branch, SHA, tag), and GitHub dispatches an event to deployment toolings that are listening. **It's an event-driven decoupled way to deploy your code.** This article looks under the hood about how Gitploy interacts with deployment API.
+Gitploy builds the system around GitHub [deployment API](https://docs.github.com/en/rest/reference/deployments#deployments). Deployment API is a request to deploy a specific ref (branch, SHA, tag), and GitHub dispatches an event to deployment toolings that can listen for and act on when a request is posted. **It's an event-driven decoupled way to deploy your code.** This article looks under the hood Gitploy interacts with deployment API.
 
 
 ## GitHub Deployment API
@@ -34,7 +34,7 @@ Gitploy provides the file (i.e., `deploy.yml`) to configure the parameters for e
 
 ### Event Dispatch
 
-Gitploy requests to deploy a ref to GitHub, and it dispatches an event to deployment toolings.
+Gitploy posts a request to GitHub, and it dispatches an event to deployment toolings.
 
 ## Deployment Tooling
 
