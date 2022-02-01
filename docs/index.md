@@ -3,7 +3,7 @@ sidebar_position: 1
 title: What is Gitploy?
 ---
 
-Gitploy is a tooling that helps your organization build the deployment system in minutes. It enables your organization **to deploy in the same manner** without worrying about  the implementation details of delivering different types of applications (e.g., web, native). and **to deploy differently** for each application by a simple configuration file, respectively. And as a result, your organization can get a robust system to deploy fast and safely. 🚀
+Gitploy is a tooling that helps your organization build the deployment system in minutes. It enables your organization **to deploy in the same manner** without worrying about  the implementation details of delivering different types of applications (e.g., web, native) and **to deploy differently** with a simple configuration file for each application, respectively. And as a result, your organization can get a robust system to deploy fast and safely. 🚀
 
 ## Deploy in the same manner
 
