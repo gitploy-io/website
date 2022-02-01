@@ -12,7 +12,7 @@ Gitploy builds the system around GitHub [deployment API](https://docs.github.com
 The deployment API consists of these stages:
 
 1. A user selects a ref(branch, SHA, tag) to deploy.
-2. Gitploy verifies the ref for deployment safety.
+2. It verifies the ref for deployment safety.
 3. It requests GitHub to deploy a specific ref. 
 
 Of course, Gitploy follows these stages to deploy a ref and enhances each stage to use it easily and safely.
