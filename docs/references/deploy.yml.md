@@ -24,7 +24,7 @@ Field                    |Type                     |Required  |Description
 `deployable_ref`         |*string*                 |`false`   |This field specifies which the ref(branch, SHA, tag) is deployable or not. It supports the regular expression `re2`. 
 `auto_deploy_on`         |*string*                 |`false`   |This field controls auto-deployment behaviour given a ref(branch, SHA, tag). If any new push events are detected on this event, the deployment will be triggered. It supports the regular expression ([re2](https://github.com/google/re2/wiki/Syntax)). E.g. `refs/heads/main` or `refs/tags/v.*`
 `review`                 |*[Review](#review)*      |`false`   |This field configures reviewers.
-`frozen_windows`         |*[][Frozen Window](#frozen-window)* |`false`   |This field configures to add a frozen window to prevent unintended deployment for the environment.
+`frozen_windows`         |*[\][Frozen Window](#frozen-window)* |`false`   |This field configures to add a frozen window to prevent unintended deployment for the environment.
 
 ## Review
 
