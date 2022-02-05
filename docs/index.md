@@ -9,9 +9,9 @@ Gitploy is a tooling that helps your organization build the deployment system in
 
 An organization has different types of applications, and it needs different deployment toolings for each application. For example, if an organization uses the Kubernetes for servers and the S3 for static websites, they generally choose different toolings. In my case, I used to choose Spinnaker for Kubernetes and CI tools (Ex. GitHub Action) for S3.
 
-But multiple tooling has a risk of increasing the complexity of the system. It costs users who want to deploy to learn because each tooling has a different interface. And also, it is hard to manage distributed deployments in one place. If an organization needs it, they should collect and aggregate it by themselves.
+But multiple tooling has a risk of increasing the complexity of the system. It costs users quite a lot of times to deploy because each tooling has a different interface. And also, it is hard to manage deployments in one place because they are distributed. If an organization needs it, they should collect and aggregate it by themselves.
 
-Gitploy resolves the complexity perfectly in minutes. It always provides **the way to deploy in the same manner.** The users who want to deploy don't need to know which infrastructure they deploy or which toolings they use anymore. They just deploy what they want and check how it goes.
+Gitploy resolves the complexity perfectly. It always provides **the way to deploy in the same manner.** The users who want to deploy don't need to know which infrastructure they deploy or which toolings they use anymore. They just deploy it, without worrying about the implementation details.
 
 Gitploy provides an intuitive UI similar to GitHub. Users can select one of the commits, branches, or tags to deploy and follow up on the deployment status.
 
@@ -19,9 +19,9 @@ Gitploy provides an intuitive UI similar to GitHub. Users can select one of the 
 
 ## Deploy differently
 
-Each application needs a customizable pipeline. If an organization has essential applications to deploy carefully, it should enforce a gateway like a review or deploy freeze window. And also an organization chooses continuous delivery or continuous deployment for application.
+Each application needs a customizable pipeline. If an organization has core applications to deploy carefully, it should enforce a gateway like a review or deploy freeze window. And also an organization should chooses continuous delivery or continuous deployment for application.
  
-Gitploy provides a way **to configure a pipeline with a simple, easy‑to‑read file for each repository (each environment).** The default path is `deploy.yml` at the root directory, but you can replace the file path in the settings tab of Gitploy. 
+Gitploy provides a way **to configure a pipeline with a simple, easy‑to‑read file for each repository (and each environment).** It is placed at `deploy.yml` as default, but you can replace the file path in the settings tab of Gitploy. 
 
 Currently, Gitploy provides powerful options such as *`ref` verification*, *continuous delivery vs continuous deployment*, and *review*. You can check the documentation for the detail.
 
