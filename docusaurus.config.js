@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gitploy',
   tagline: 'Builds your deployment system around GitHub.',
-  url: 'https://www.gitploy.io/',
+  url: 'https://www.gitploy.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -60,8 +60,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'og:image', content: '/img/logo.svg'},
-        {name: 'keywords', content: 'github, github deployment api, github environment, deploy, continuous deployment, continuous delivery, cicd'}
+        // General 
+        {name: 'description', content: 'Build the deployment system around GitHub.'},
+        {name: 'keywords', content: 'github, github deployment api, github environment, deploy, continuous deployment, continuous delivery, cicd'},
+        // Facebook
+        {property: 'og:type', content: 'website'},
+        {property: 'og:description', content: 'Build the deployment system around GitHub.'},
+        {property: 'og:image', content: 'https://www.gitploy.io/img/logo_400.png'},
+        // Twitter
+        {property: 'twitter:domain', content: 'gitploy.io'},
+        {property: 'twitter:url', content: 'https://www.gitploy.io/'},
+        {name: 'twitter:title', content: 'Gitploy'},
+        {name: 'twitter:description', content: 'Build the deployment system around GitHub.'},
+        {name: 'twitter:image', content: 'https://www.gitploy.io/img/logo_400.png'},
       ],
       navbar: {
         title: 'Gitploy',
