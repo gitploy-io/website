@@ -60,10 +60,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
+        // General 
+        {name: 'description', content: 'Build the deployment system around GitHub.'},
+        {name: 'keywords', content: 'github, github deployment api, github environment, deploy, continuous deployment, continuous delivery, cicd'},
+        // Facebook
         {property: 'og:type', content: 'website'},
         {property: 'og:description', content: 'Build the deployment system around GitHub.'},
         {property: 'og:image', content: 'https://www.gitploy.io/img/logo_400.png'},
-        {name: 'keywords', content: 'github, github deployment api, github environment, deploy, continuous deployment, continuous delivery, cicd'}
+        // Twitter
+        {property: 'twitter:domain', content: 'gitploy.io'},
+        {property: 'twitter:url', content: 'https://www.gitploy.io/'},
+        {name: 'twitter:title', content: 'Gitploy'},
+        {name: 'twitter:description', content: 'Build the deployment system around GitHub.'},
+        {name: 'twitter:image', content: 'https://www.gitploy.io/img/logo_400.png'},
       ],
       navbar: {
         title: 'Gitploy',
