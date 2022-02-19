@@ -147,6 +147,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: 'ZDLINYGROS',
+        apiKey: 'd45b62469926927090c8af5e8b372f6e',
+        indexName: 'gitploy',
+        contextualSearch: true,
+        // Optional: Algolia search parameters
+        searchParameters: {},
+      }
     }),
 };
 
