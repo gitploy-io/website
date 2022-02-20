@@ -4,30 +4,26 @@ sidebar_position: 4
 
 # Review
 
-Gitploy has the review to require at least one approval for the deployment. You can list up to reviewers on the configuration file. The reviewers must be logged in and have read permission for the repository.
-
-## Review process
-
-1\. To enable review, you must configure the `review` field first.
+## About required review
+Users can enable the review in the `deploy.yml` file for each environment, and the users who review are specified here. Reviewers must have at least read permission.
 
 ```yaml title="deploy.yml"
 envs:
   - name: production
     review:
       enabled: true
-      reviewers: ["USER_LOGIN1", "USER_LOGIN2"]
+      reviewers: ["octocat", "dreamer"]
 ```
 
-2\. When a user deploys in the 'deploy' tab, Gitploy automatically requests a review to reviewers. A reviewer should check what is changed from the latest one.
+After the review is enabled, reviews are requested when a user deploys. And the deployment waits until a review is approved and has a status of `waiting`. Only one of the required reviewers needs to approve it to proceed. If one rejects it, deployment is not possible. If a deployment is not approved within 30 minutes, it will be automatically canceled.
 
-![Changes](../../static/img/docs/changes.png)
-
-3\. Finally, a reviewer confirms to approve or reject the deployment, and the `deploy` button will be enabled if a reviewer approves. 
-
-*I recommend that a reviewer use the `Approve and Deploy` to let a reviewer acknowledges that the deployment is started.*
+The notification will navigate to the deployment page when a review is requested. And when the reviewer presses the 'Review' button on the page, a pop-up shows options for approval and rejection. To approve, click **Approve and Deploy**. After approved, the deployment will proceed (after any deployment protection rules have passed).
 
 ![Review](../../static/img/docs/review.png)
 
-## Notification
+## Pro Tips
 
-Gitploy notifies users when a review is requested or responded to. You can check the [documentation](./notification.md) for the detail.
+### Confirm Changes
+The 'Changes' field at the bottom of the page shows what changes have been made. Reviewers can quickly check what has changed through the commit messages.
+
+![Changes](../../static/img/docs/changes.png)
