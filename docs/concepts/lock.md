@@ -4,8 +4,12 @@ sidebar_position: 5
 
 # Lock
 
-The worst thing that can happen is someone deploys to the same repository during an incident. The lock helps with this. We provide the locking system to block deployments going out to the environment. 
+## Locking deployments
 
-You can lock the environment simply by clicking the `LOCK` button in the UI. And if you want to reserve unlock, you can configure the auto-unlock timer.
+There are some situations where you may want to block a deployment. If someone else deploys to the same environment while debugging in the production environment, this may worsen the issue. In this case, the locking deployments buy time to resolve the issue as you see fit.
 
-![lock](../../static/img/docs/lock.png)
+Gitploy provides locking for each environment. You can use it simply by clicking the 'LOCK' button.
+
+Gitploy also provides automatic unlocking. Generally, users forget to unlock after locking. The auto-unlock provides a function automatically unlocked after a specific time. It can be set to be unlocked after a certain period that requires locking for a certain period, such as canary deployment.
+
+![Lock](../../static/img/docs/lock.png)
