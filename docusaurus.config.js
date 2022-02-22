@@ -162,9 +162,6 @@ const config = {
         appId: 'ZDLINYGROS',
         apiKey: '0a7eb21f346bb9251fdfd012329277d4',
         indexName: 'gitploy',
-        contextualSearch: true,
-        // Optional: Algolia search parameters
-        searchParameters: {},
       }
     }),
 };
