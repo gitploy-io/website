@@ -160,8 +160,9 @@ const config = {
       },
       algolia: {
         appId: 'ZDLINYGROS',
-        apiKey: '0a7eb21f346bb9251fdfd012329277d4',
+        apiKey: 'd45b62469926927090c8af5e8b372f6e',
         indexName: 'gitploy',
+        contextualSearch: true
       }
     }),
 };
