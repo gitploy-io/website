@@ -82,7 +82,67 @@ steps:
 ```
 
 ### Spinnaker
-TBU
+
+#### Listening for an event
+
+The trigger type has to be the webhook type to listen to an event, and the constraints verify repository and environment to determine if triggered or not. 
+
+![Spinnaker Webhook Trigger](../../static/img/docs/spinnaker-trigger.png)
+
+#### Update the deployment status
+
+Spinnaker provides a simple way to add a custom stage to call API instead of extending through codes. Spinnaker can typically make API calls as part of a pipeline by adding a custom stage.
+
+To create a custom webhook, we have to add the configuration to the `orca-local.yml` file, located in `$HOME/.hal/default/profiles`. And the custom stage has a few variables, `owner`, `repo`, `deployment_id`, `description`, and `state`, for updating the deployment status dynamically. You can set up the variables for your project.
+
+<details>
+<summary>Custom Stage</summary>
+
+```yaml
+webhook:
+  preconfigured:
+    - label: Update Deployment status
+      type: updateDeploymentStatus
+      enabled: true
+      description: Update the deployment status.
+      method: POST
+      url: https://api.github.com/repos/${ parameterValues['owner'] }/${ parameterValues['repo'] }/deployments/${ parameterValues['deployment_id'] }/statuses
+      customHeaders:
+        # Replace with your GitHub token.
+        Authorization:
+          - token GITHUB_TOKEN
+        Content-Type:
+          - application/json
+      payload: |-
+        {
+          "description": "${parameterValues['description']}",
+          "state": "${parameterValues['state']}",
+          "log_url": "http://localhost:9000/#/applications/${execution.application}/executions/details/${execution.id}"
+        }
+      parameters:
+        - label: GitHub Owner
+          name: owner
+          type: string
+        - label: GitHub Repo
+          name: repo
+          type: string
+        - lable: Deployment ID
+          name: deployment_id
+          type: string
+        - label: Description
+          name: description
+          type: string
+        - label: State
+          name: state
+          type: string
+          description: The state can be one of "queued", "in_progress", "success", "failure"
+```
+
+</details>
+
+You can reference the [spinnaker demo](https://github.com/gitploy-io/spinnaker-demo) for integrating with Spinnaker.
+
+
 
 ### Internal Deployment Tooling
 
