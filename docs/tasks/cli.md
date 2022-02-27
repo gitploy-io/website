@@ -14,19 +14,19 @@ Download and install the raw binaries by platform:
 
 |platform      | download   | verify
 |---           |---         |---
-|Linux x64     |[tarball](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_linux_amd64.tar.gz)   |[checksum](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_checksums.txt)
-|Linux arm64	  |[tarball](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_linux_arm64.tar.gz) |[checksum](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_checksums.txt)
-|Linux arm	  |[tarball](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_linux_arm.tar.gz)     |[checksum](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_checksums.txt)
-|Windows x64	  |[tarball](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_windows_amd64.tar.gz) |[checksum](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_checksums.txt)
-|Darwin x64	  |[tarball](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_darwin_amd64.tar.gz)  |[checksum](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_checksums.txt)
-|Darwin arm64  |[tarball](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_darwin_arm64.tar.gz)  |[checksum](https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_checksums.txt)
+|Linux x64     |[tarball](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_linux_amd64.tar.gz)   |[checksum](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_checksums.txt)
+|Linux arm64	  |[tarball](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_linux_arm64.tar.gz) |[checksum](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_checksums.txt)
+|Linux arm	  |[tarball](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_linux_arm.tar.gz)     |[checksum](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_checksums.txt)
+|Windows x64	  |[tarball](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_windows_amd64.tar.gz) |[checksum](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_checksums.txt)
+|Darwin x64	  |[tarball](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_darwin_amd64.tar.gz)  |[checksum](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_checksums.txt)
+|Darwin arm64  |[tarball](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_darwin_arm64.tar.gz)  |[checksum](https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_checksums.txt)
 
 ### Install on Linux
 
 Download and install on Linux:
 
 ```shell
-curl -L https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_linux_amd64.tar.gz | tar zx
+curl -L https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_linux_amd64.tar.gz | tar zx
 sudo install -t /usr/local/bin gitploy
 ```
 
@@ -35,7 +35,7 @@ sudo install -t /usr/local/bin gitploy
 Download and install on OSX:
 
 ```shell
-curl -L https://github.com/gitploy-io/gitploy/releases/download/v0.6.0-alpha2/gitploy_darwin_amd64.tar.gz | tar zx
+curl -L https://github.com/gitploy-io/gitploy/releases/latest/download/gitploy_darwin_amd64.tar.gz | tar zx
 sudo cp gitploy /usr/local/bin
 ```
 
