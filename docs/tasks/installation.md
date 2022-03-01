@@ -60,7 +60,7 @@ docker run \
   --restart=always \
   --detach=true \
   --name=gitploy \
-  gitployio/gitploy:0.4
+  gitployio/gitploy:0.6
 ```
 
 ### Kubernetes
@@ -107,7 +107,7 @@ spec:
     spec:
       containers:
         - name: gitploy-server
-          image: "gitployio/gitploy:0.4"
+          image: "gitployio/gitploy:0.6"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
