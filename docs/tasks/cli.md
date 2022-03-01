@@ -49,7 +49,7 @@ The command-line tools interact with the server using REST endpoints. You will n
 export GITPLOY_SERVER_HOST=https://cloud.gitploy.io/
 ```
 
-*⚠️The host must have a trailing slash (i.e., '/').*
+*⚠️The host must have a trailing slash (i.e., `/`).*
 
 **2\. Configure your Gitploy token:**
 
