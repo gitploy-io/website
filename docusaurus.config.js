@@ -155,6 +155,20 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Gitploy.IO`,
       },
+      colorMode: {
+        defaultMode: 'light',
+        respectPrefersColorScheme: true,
+        switchConfig: {
+          darkIcon: '🌙',
+          darkIconStyle: {
+            marginLeft: '2px',
+          },
+          lightIcon: '☀️',
+          lightIconStyle: {
+            marginLeft: '1px',
+          },
+        },
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
