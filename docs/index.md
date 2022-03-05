@@ -15,7 +15,7 @@ Gitploy resolves the complexity perfectly. It always provides **the way to deplo
 
 Gitploy provides an intuitive UI similar to GitHub. Users can select one of the commits, branches, or tags to deploy and follow up on the deployment status.
 
-![Gitploy](../static/img/docs/gitploy-v2.gif)
+![Gitploy Demo](../static/img/docs/gitploy-v2.gif)
 
 ## Deploy differently
 
