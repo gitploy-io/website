@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import HomepageDemo from '../components/HomepageDemo';
 import HomepageInstallation from '../components/HomepageInstallation';
 
 function HomepageHeader() {
@@ -16,8 +17,14 @@ function HomepageHeader() {
           <div className="col col--6 col--offset-3">
             <h1 className="hero__title">Builds your deployment system around GitHub.</h1>
           </div>
+          <div className="col col--8 col--offset-2">
+            <p className="hero__subtitle">
+              It enables your organization <strong>to deploy in the same manner</strong> regardless of the type of applications
+              and <strong>to set up a deployment pipeline differently</strong> with a simple configuration file for each application.
+            </p>
+          </div>
         </div>
-        <div className={clsx('margin-top--lg', styles.buttons)}>
+        <div className={clsx(styles.buttons)}>
           <Link
             className="button button--primary button--lg margin-right--md"
             to="/docs/">
@@ -42,7 +49,8 @@ export default function Home() {
       description={siteConfig.description}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/* <HomepageFeatures /> */}
+        <HomepageDemo />
         <HomepageInstallation />
       </main>
     </Layout>
