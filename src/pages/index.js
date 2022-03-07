@@ -20,7 +20,7 @@ function HomepageHeader() {
           <div className="col col--8 col--offset-2">
             <p className="hero__subtitle">
               It enables your organization <strong>to deploy in the same manner</strong> regardless of the type of applications
-              and <strong>set up a deployment pipeline differently</strong> with a simple configuration file for each application.
+              and <strong>to set up a deployment pipeline differently</strong> with a simple configuration file for each application.
             </p>
           </div>
         </div>
