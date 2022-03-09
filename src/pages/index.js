@@ -4,7 +4,6 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
 import HomepageDemo from '../components/HomepageDemo';
 import HomepageInstallation from '../components/HomepageInstallation';
 
@@ -19,8 +18,8 @@ function HomepageHeader() {
           </div>
           <div className="col col--8 col--offset-2">
             <p className="hero__subtitle">
-              It enables your organization <strong>to deploy in the same manner</strong> regardless of the type of applications
-              and <strong>to set up a deployment pipeline differently</strong> with a simple configuration file for each application.
+              Deploy <strong>any branch, tag, or commit</strong> to <strong>different runtime environments</strong> with a click. 
+              It doesn't get any simpler than that. 
             </p>
           </div>
         </div>
