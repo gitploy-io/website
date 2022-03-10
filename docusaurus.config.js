@@ -126,6 +126,10 @@ const config = {
                 href: 'https://github.com/gitploy-io/gitploy/discussions',
               },
               {
+                label: 'Twitter',
+                href: 'https://twitter.com/gitploy_io',
+              },
+              {
                 label: 'Slack',
                 href: 'https://join.slack.com/t/gitploy/shared_invite/zt-112wz7qtz-HuZXMM_DaEEo1VDdsCUSRg',
               },
