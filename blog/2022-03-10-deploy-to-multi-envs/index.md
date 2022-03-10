@@ -1,6 +1,7 @@
 ---
 slug: deploy-to-multi-envs
 title: Deploy to multiple environments with GitHub Action
+description: Gitploy provides another solution deploying to multiple environments.
 tags: [GitHub Action, Multiple Environments]
 image: ./demo.gif
 keywords: [deploy, multiple environments, different environments, github action]
