@@ -129,5 +129,5 @@ Finally, when you trigger on Gitploy, you can see that it successfully deploys t
 **Reference**
 
 * [Github Actions: deploy to multiple environments from single workflow](https://www.maxivanov.io/github-actions-deploy-to-multiple-environments-from-single-workflow/)
-* [multi-env-demo](https://github.com/gitploy-io/multi-env-demo)
+* Demo: [gitploy-io/multi-env-demo](https://github.com/gitploy-io/multi-env-demo)
 
