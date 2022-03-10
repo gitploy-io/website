@@ -2,6 +2,8 @@
 slug: deploy-to-multi-envs
 title: Deploy to multiple environments with GitHub Action
 tags: [GitHub Action, Multiple Environments]
+image: ./demo.gif
+keywords: [deploy, multiple environments, different environments, github action]
 ---
 
 Having a well-tuned workflow keeps a team productive and helps them deliver reliable software. One recommended practice for any significant software development is using multiple environments. Using multiple environments ensures that software is rigorously tested before deployed and made available to users.
