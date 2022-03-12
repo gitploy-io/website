@@ -11,7 +11,7 @@ Having a well-tuned workflow keeps a team productive and helps them deliver reli
 
 A general way for deploying to an environment is the branch strategy. Users create branches for each environment and deploy them by pushing a commit to the branch. Then, The deployment tool such as GitHub Action or Circle CI will deploy to the environment corresponding to the branch name.
 
-The following is an example implemented by a GitHub   Action. Firstly, it wants to trigger the workflow on push events for specific branches such as `dev` and `prod`. And in the step, through the `if` syntax, the workflow deploys it to a different environment for each branch.
+The following is an example that deploy to the Azure Function App by a GitHub Action. Firstly, it wants to trigger the workflow on push events for specific branches such as `dev`, `staging` and `prod`. And in the `steps`, through the `if` syntax, the workflow deploys it to a different environment for each branch.
 
 <details>
 <summary>Deploy By Branch Push</summary>
@@ -51,7 +51,9 @@ jobs:
 
 **However, although the branch strategy is easy and fast, it is not flexible and scalable.** The user must create a new branch and modify the workflow if a new environment is added.
 
-On the other hand, Gitploy provides another solution. **Gitploy dispatches an event that includes information necessary for deployment, such as the environment name, Function App name, and so on, through the [deployment API](https://docs.github.com/en/rest/reference/deployments#deployments) when a user triggers.** To activate Gitploy, we should place the `deploy.yml` file in the root of the git repository like below. Note that the `payload` field has the extra information for deployment, and it has different information for each environment, respectively. When a user triggers, the `payload` is passed to the deployment tooling.
+On the other hand, Gitploy provides another solution. **Gitploy dispatches an event that includes information necessary for deployment, such as the environment name, Function App name, and so on, through the [deployment API](https://docs.github.com/en/rest/reference/deployments#deployments).** 
+
+To activate Gitploy, we should place the `deploy.yml` file in the root of the git repository like below. Note that the `payload` field has the informations for deployment, and it has different information for each environment, respectively. When a user triggers, the `payload` is passed to the deployment tooling.
 
 <details>
 <summary>deploy.yml</summary>
@@ -72,7 +74,7 @@ envs:
 
 </details>
 
-And in the workflow, the information for deployment is read through the `github.event.deployment.payload` context. The thing is that the workflow does not need `if` syntax for conditional steps anymore because an event has information.
+And in the workflow, the information for deployment is read through the `github.event.deployment.payload` context so that the workflow does not need `if` syntax for conditional steps anymore.
 
 <details>
 <summary>Deploy By Gitploy</summary>
