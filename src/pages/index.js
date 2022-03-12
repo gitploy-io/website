@@ -18,7 +18,7 @@ function HomepageHeader() {
           </div>
           <div className="col col--8 col--offset-2">
             <p className="hero__subtitle">
-              Deploy <strong>any branch, tag, or commit</strong> to <strong>different runtime environments</strong> with a click. 
+              Deploy <strong>any branch, tag, or commit</strong> to <strong>different runtime environments</strong> fast and safely. 
               It doesn't get any simpler than that. 
             </p>
           </div>
