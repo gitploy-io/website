@@ -15,16 +15,17 @@ Field                    |Type                     |Required  |Description
 Field                    |Type                     |Required  |Description
 ---                      |----                     |---       |---
 `name`                   |*string*                 |`true`    |This field is the runtime environment such as `production`, `staging`, and `qa`. 
-`task`                   |*string*                 |`false`   |This field is used by the deployment system to distinguish the kind of deployment. (*Only for `GitHub`*)
-`description`            |*string*                 |`false`   |This field is the short description of the deployment. (*Only for `GitHub`*)
-`auto_merge`             |*boolean*                |`false`   |This field is used to ensure that the requested ref is not behind the repository's default branch. If you deploy with the commit or the tag you need to set `false`. For rollback, Gitploy set the field `false`. (*Only for `GitHub`*)
-`required_contexts`      |*[]string*               |`false`   |This field allows you to specify a subset of contexts that must be success. (*Only for `GitHub`*)
-`payload`                |*object* or *string*     |`false`   |This field is JSON payload with extra information about the deployment. (*Only for `GitHub`*)
+`task`                   |*string*                 |`false`   |This field is used by the deployment system to distinguish the kind of deployment. (*Only for GitHub*)
+`description`            |*string*                 |`false`   |This field is the short description of the deployment. (*Only for GitHub*)
+`auto_merge`             |*boolean*                |`false`   |This field is used to ensure that the requested ref is not behind the repository's default branch. If the ref is behind the default branch for the repository, GitHub will attempt to merge it for you. For rollback, Gitploy set the field `false` internally. The default value is `true`. (*Only for GitHub*)
+`required_contexts`      |*[]string*               |`false`   |This field allows you to specify a subset of contexts that must be success. (*Only for GitHub*)
+`payload`                |*object* or *string*     |`false`   |This field is JSON payload with extra information about the deployment. (*Only for GitHub*)
 `production_environment` |*boolean*                |`false`   |This field specifies whether this runtime environment is production or not.
-`deployable_ref`         |*string*                 |`false`   |This field specifies which the ref(branch, SHA, tag) is deployable or not. It supports the regular expression `re2`. 
 `auto_deploy_on`         |*string*                 |`false`   |This field controls auto-deployment behaviour given a ref(branch, SHA, tag). If any new push events are detected on this event, the deployment will be triggered. It supports the regular expression ([re2](https://github.com/google/re2/wiki/Syntax)). E.g. `refs/heads/main` or `refs/tags/v.*`
 `deployable_ref`         |*string*                 |`false`   |This field specifies which the ref(branch, SHA, tag) is deployable or not. It supports the regular expression `re2`. 
 `frozen_windows`         |*[\][Frozen Window](#frozen-window)* |`false`   |This field configures to add a frozen window to prevent unintended deployment for the environment.
+`serialization`         |*boolean*                 |`false`   |This field forces only one deployment to run for the environment.
+`review`                 |*[Review](#review)*      |`false`   |This field configures reviewers.
 
 ## Review
 
