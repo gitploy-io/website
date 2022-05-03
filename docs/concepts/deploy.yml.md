@@ -66,6 +66,15 @@ envs:
         location: Asia/Seoul
 ```
 
+### Serialization
+**Serialization forces only one deployment to run for the same environment.** If deployment is running for a specific environment, users cannot deploy until the deployment is finished. In particular, serialization is helpful in long-running deployment strategies, such as canary deployments, as it prevents other deployments.
+
+```yaml title="deploy.yml"
+envs:
+  - name: production
+    serialization: true
+```
+
 ### Review
 If you require a specific person, such as a service owner or product manager, to review what is deployed before deployment, you can configure the `review` field. You can list up users as reviewers under the `review` field. Then Gitploy requests a review to users by sending a notification when a deployment is triggered.
 
