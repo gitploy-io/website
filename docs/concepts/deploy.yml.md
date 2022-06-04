@@ -89,7 +89,7 @@ envs:
 ## Deploy 🚀
 
 ### Parameters of GitHub deployment API
-As the 'How it works' documentation mentioned, Gitploy sends a request by deployment API. You can configure all the parameters in a configuration file.
+As the 'How it works' documentation mentioned, Gitploy sends a request by [deployment API](https://docs.github.com/en/rest/reference/deployments#deployments). You can configure all the parameters in a configuration file.
 
 ```yaml title="deploy.yml"
 envs:
@@ -103,3 +103,28 @@ envs:
     production_environment: true
 ```
 
+### Dynamic Payload
+**This `dynamic_payload` field dynamically generates payload and passes it to the Github deployment API.** This configuration makes deployment systems flexible and powerful. For example, it allows the canary deployment system to set the weight of traffic to shift when triggered.
+
+When setting the dynamic payload, when the user presses the deploy button, an input form appears so that the user can enter the payload.
+
+```yaml title="deploy.yml"
+envs:
+  - name: production    
+    dynamic_payload:
+      enabled: true
+      inputs:
+        canaryEnabled:
+          required: true
+          type: select
+          description: Deploy strategy
+          options:
+            - "true"
+            - "false"
+          default: "true"
+        canaryWeight:
+          required: true
+          type: number
+          description: The weight of traffic to shift.
+          default: 5
+```
