@@ -39,7 +39,7 @@ envs:
 
 ### Deployable Ref
 
-The `ref` can be any named branch, tag, or SHA. But sometimes, a `ref` must be specific branches or tags. You can verify a `ref` matched with the format by configuring the `deployable_ref` field. And this configuration also supports a regular expression.
+The `ref` can be any named branch, tag, or SHA. But sometimes, a `ref` must be specific branches or tags. **You can verify a `ref` matched with the regular expression** by configuring the `deployable_ref` field. 
 
 ```yaml title="deploy.yml"
 envs:
@@ -48,7 +48,7 @@ envs:
 ```
 
 ### Deploy Freeze Window
-If you want to prevent deployments for a particular period, such as during a planned vacation period or out of working time, you can configure the `frozen_windows` field. During a deploy freeze period, users can not execute any deployment. 
+**If you want to prevent deployments for a particular period**, such as during a planned vacation period or out of working time, you can configure the `frozen_windows` field. During a deploy freeze period, users can not execute any deployment. 
 
 And this configuration uses the cron expression to handle repetitive periods. You can check the detail in the [documentation](../references/deploy.yml.md).
 
@@ -66,8 +66,17 @@ envs:
         location: Asia/Seoul
 ```
 
+### Serialization
+**Serialization forces only one deployment to run for the same environment.** If deployment is running for a specific environment, users cannot deploy until the deployment is finished. In particular, serialization is helpful in long-running deployment strategies, such as canary deployments, as it prevents other deployments.
+
+```yaml title="deploy.yml"
+envs:
+  - name: production
+    serialization: true
+```
+
 ### Review
-If you require a specific person, such as a service owner or product manager, to review what is deployed before deployment, you can configure the `review` field. You can list up users as reviewers under the `review` field. Then Gitploy requests a review to users by sending a notification when a deployment is triggered.
+**If you require a specific person, such as a service owner or product manager, to review what is deployed before deployment**, you can configure the `review` field. You can list up users as reviewers under the `review` field. Then Gitploy requests a review to users by sending a notification when a deployment is triggered.
 
 ```yaml title="deploy.yml"
 envs:
