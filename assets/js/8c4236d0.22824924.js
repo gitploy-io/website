@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1598],{3164:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","name":"Argo CD","count":1,"permalink":"/blog/tags/argo-cd"}')}}]);

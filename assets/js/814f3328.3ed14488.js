@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Production Release With Argo CD - Commit Pinning","permalink":"/blog/argocd-commit-pinning"},{"title":"Deploy to multiple environments with GitHub Action","permalink":"/blog/deploy-to-multi-envs"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7522],{7967:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","name":"Commit Pinning","count":1,"permalink":"/blog/tags/commit-pinning"}')}}]);
