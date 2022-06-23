@@ -39,9 +39,9 @@
 
 html[data-theme='dark'] {
   --ifm-font-base-color: #dee0f2;
-  --ifm-navbar-link-hover-color: #8b9dff;
-  --ifm-link-color: #8b9dff;
-  --ifm-menu-color-active: #8b9dff;
+  --ifm-navbar-link-hover-color: #b37feb;
+  --ifm-link-color: #b37feb;
+  --ifm-menu-color-active: #b37feb;
   --ifm-background-color: #0a141c;
   --ifm-heading-color: #dee0f2;
   --ifm-footer-background-color: #0a141c;
