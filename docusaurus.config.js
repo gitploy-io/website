@@ -123,11 +123,7 @@ const config = {
             items: [
               {
                 label: 'Discussion',
-                href: 'https://github.com/gitploy-io/gitploy/discussions',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/gitploy_io',
+                href: 'https://github.com/gitploy-io/gitploy/issues',
               },
               {
                 label: 'Slack',
