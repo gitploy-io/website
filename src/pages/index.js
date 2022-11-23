@@ -31,7 +31,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="https://github.com/gitploy-io/gitploy/discussions">
+            to="https://github.com/gitploy-io/gitploy/">
             Join Our Community
           </Link>
         </div>
