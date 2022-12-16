@@ -82,22 +82,17 @@ const config = {
         },
         items: [
           {
-            to: 'https://cloud.gitploy.io',
-            label: 'Cloud',
-            position: 'left',
-          },
-          {
-            to: '/enterprise',
-            label: 'Enterprise',
-            position: 'left',
-          },
-          {
             type: 'doc',
             docId: 'index',
             position: 'left',
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/enterprise',
+            label: 'Enterprise',
+            position: 'left',
+          },
           {
             href: 'https://github.com/gitploy-io/gitploy',
             position: 'right',
@@ -137,10 +132,6 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'Cloud',
-                href: 'https://cloud.gitploy.io',
               },
               {
                 label: 'GitHub',
